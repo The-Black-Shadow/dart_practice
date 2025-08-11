@@ -29,6 +29,14 @@ void displayInfo({required String name, required int age}) {
   print("Age: $age");
 }
 
+//anonymous function
+var cube = (int n) {
+  return n * n * n;
+};
+
+//Arrow function
+var square = (int n) => n * n;
+
 void main() {
   var total = add(2, 3);
   print("Total sum: $total");
@@ -37,4 +45,6 @@ void main() {
   var greeting = greet();
   print("Greeting: $greeting");
   greetings();
+  print("Cube of 3 is: ${cube(3)}");
+  print("Square of 4 is: ${square(4)}");
 }
